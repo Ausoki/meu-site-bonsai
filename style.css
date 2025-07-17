@@ -61,9 +61,12 @@ p {
 
 .galeria img {
     width: 300px;
+    height: 300px; /* altura fixa para manter proporção */
+    object-fit: cover; /* evita esticar a imagem */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
     transition: transform 0.3s;
+
 }
 
 .galeria img:hover {
